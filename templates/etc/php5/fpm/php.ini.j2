@@ -408,7 +408,7 @@ max_input_time = {{ php5_max_input_time | default('-1') }}
 ;max_input_nesting_level = 64
 
 ; How many GET/POST/COOKIE input variables may be accepted
-; max_input_vars = 1000
+max_input_vars = {{ php5_max_input_vars | default('1000') }}
 
 ; Maximum amount of memory a script may consume (128MB)
 ; http://php.net/memory-limit #}
